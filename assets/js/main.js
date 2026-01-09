@@ -1013,7 +1013,71 @@
 
 	});
 
-}
+	}
+
+	 if (document.querySelector(".des-portfolio-wrap")) {
+        const pr = ScrollTrigger.matchMedia();
+
+        pr.add("(min-width: 1199px)", () => {
+
+            const sections = document.querySelectorAll(".des-portfolio-panel");
+            const wrap = document.querySelector(".des-portfolio-wrap");
+
+            if (!sections.length || !wrap) return;
+
+            // Initial state
+            gsap.set(sections, { scale: 1 });
+
+            // Animate each section except the last one
+            sections.forEach((section, index) => {
+                const isLast = index === sections.length - 1;
+
+                gsap.to(section, {
+                    scale: isLast ? 1 : 0.8,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: section,
+                        start: "top 14%",
+                        end: "bottom 80%",
+                        scrub: true,
+                        pin: true,
+                        pinSpacing: false,
+                        endTrigger: wrap,
+                        markers: false,
+                    },
+                });
+            });
+
+            // Cleanup on condition change
+            return () => {
+                ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+            };
+        });
+    }
+
+	  /* ================================
+       Sticky Js Start
+    ================================ */
+
+    let pr = gsap.matchMedia();
+	pr.add("(min-width: 1199px)", () => {
+		let tl = gsap.timeline();
+		let panels = document.querySelectorAll('.tp-panel-pin')
+		panels.forEach((section, index) => {
+			tl.to(section, {
+				scrollTrigger: {
+					trigger: section,
+					pin: section,
+					scrub: 1,
+					start: 'top 14%',
+					end: "bottom 62%",
+					endTrigger: '.tp-panel-pin-area',
+					pinSpacing: false,
+					markers: false,
+				},
+			})
+		})
+	});
 
 
 			

@@ -1461,11 +1461,15 @@
 	.working-thumb-top {
 		display: flex;
 		justify-content: space-between;
+		position: relative;
+		z-index: 2;
 	}
 	.working-thumb-bottom {
 		max-width: 1640px;
 		display: flex;
 		justify-content: space-between;
+		position: relative;
+		z-index: 2;
 	}
 	.style1 {
 		max-width: 519px;
