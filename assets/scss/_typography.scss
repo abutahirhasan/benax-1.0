@@ -1,0 +1,355 @@
+/* --------------------------------------------
+    Template Default Fonts & Fonts Styles
+ ---------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+
+@font-face {
+	font-family: "ThunderFont";
+	src: url("../../assets/webfonts/Thunder-LC.ttf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Gallery";
+	src: url("../../assets/webfonts/gallery.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Satoshi";
+	src: url("../../assets/webfonts/Satoshi-Variable.ttf") format("opentype");
+}
+
+// @font-face {
+// 	font-family: "helvetica";
+// 	src: url("../../assets/webfonts/Helvetica.ttf") format("opentype");
+// }
+
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+.helvetica-font{
+	font-family: "Helvetica Neue", sans-serif;
+}
+
+.satoshi-font {
+	font-family: "Satoshi", sans-serif;
+}
+
+.literata-font{
+	font-family: "Literata", serif;
+}
+
+.thunder-font {
+	font-family: "ThunderFont", sans-serif;
+}
+.gallery-font {
+	font-family: "Gallery", sans-serif;
+}
+
+$heading-font: "Instrument Sans", sans-serif;
+
+$heading-sub: "Space Grotesk", sans-serif;
+
+$body-font: "DM Sans", sans-serif;
+
+$heebo-font: "Heebo", sans-serif;
+
+//font-family: "Font Awesome 6 Free";
+$fa: "Font Awesome 6 Pro";
+
+body {
+	font-family: $body-font;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 31px;
+	color: $text-color;
+	background-color: $bg-color-2;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	padding: 0;
+}
+
+input:focus {
+	color: $white;
+	outline: none;
+}
+
+input {
+	color: $white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $heading-font;
+	margin: 0px;
+	padding: 0;
+	color: $header-color;
+	@include transition;
+}
+
+h1 {
+	font-size: 96px;
+	font-weight: 700;
+	line-height: 108px;
+	font-family: $heading-font;
+
+	@include breakpoint(max-xxxl) {
+		font-size: 85px;
+		line-height: 101px;
+	}
+
+	@include breakpoint(max-xxl) {
+		font-size: 74px;
+		line-height: 90px;
+	}
+
+	@include breakpoint(max-xl) {
+		font-size: 62px;
+		line-height: 80px;
+	}
+
+	@include breakpoint(max-lg) {
+		font-size: 48px;
+		line-height: 70px;
+	}
+
+	@include breakpoint(max-md) {
+		font-size: 46px;
+		line-height: 65px;
+	}
+
+	@include breakpoint(max-sm) {
+		font-size: 43px;
+		line-height: 60px;
+	}
+
+	@include breakpoint(max-xxs) {
+		font-size: 32px;
+		line-height: 50px;
+	}
+}
+
+h2 {
+	font-size: 44px;
+	font-weight: 700;
+	line-height: 123%;
+
+	@include breakpoint(max-xxl) {
+		font-size: 37px;
+	}
+
+	@include breakpoint(max-xl) {
+		font-size: 37px;
+	}
+
+	@include breakpoint(max-lg) {
+		font-size: 40px;
+	}
+
+	@include breakpoint(max-md) {
+		font-size: 35px;
+	}
+
+	@include breakpoint(max-sm) {
+		font-size: 30px;
+	}
+
+	@include breakpoint(max-xxs) {
+		font-size: 25px;
+	}
+}
+
+h3 {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 120%;
+
+	@include breakpoint(max-xl) {
+		font-size: 20px;
+	}
+}
+
+h4 {
+	font-size: 26px;
+	font-weight: 500;
+	line-height: 120%;
+	@include breakpoint(max-xxl) {
+		font-size: 20px;
+	}
+	@include breakpoint(max-xl) {
+		font-size: 19px;
+	}
+	@include breakpoint(max-lg) {
+		font-size: 18px;
+	}
+}
+
+h5 {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 120%;
+	@include breakpoint(max-xl) {
+		font-size: 16px;
+	}
+}
+
+h6 {
+	font-size: 16px;
+	line-height: 120%;
+	font-weight: 600;
+	@include breakpoint(max-xl) {
+		font-size: 14px;
+	}
+}
+
+a {
+	text-decoration: none;
+	outline: none !important;
+	cursor: pointer;
+	color: $header-color;
+	@include transition;
+	@include breakpoint(max-xl) {
+		font-size: 14px;
+	}
+}
+
+p {
+	margin: 0px;
+	line-height: 18px;
+	@include transition;
+	@include breakpoint(max-xl) {
+		font-size: 14px;
+	}
+}
+
+span {
+	margin: 0px;
+	// @include transition;
+	@include breakpoint(max-xl) {
+		font-size: 14px;
+	}
+}
+
+.text-white-50 {
+	color: rgb(255, 255, 255, 50%);
+}
+
+.heading-sub{
+	font-family: $heading-sub;
+}
+.heading-font{
+	font-family: $heading-font;
+}
+.heebo-font{
+	font-family: $heebo-font;
+}
+.warning-clr{
+	color: $warning-clr;
+} 
+.theme-star{
+	color: $theme-star;
+}
+.theme-star1{
+	color: $theme-star1;
+} 
+.theme-star2{
+	color: $theme-star2;
+} 
+
+.warning-bg{
+	background-color: $warning-clr;
+} 
+.theme-starbg{
+	background-color: $theme-star;
+}
+.theme-star1bg{
+	background-color: $theme-star1;
+} 
+.theme-star2bg{
+	background-color: $theme-star2;
+} 
+.bg-black6{
+	background-color: #101010 !important;
+}
+.bg-black7{
+	background-color: #010101 !important;
+}
+.bg-black--7{
+	background-color: #161616 !important;
+}
+.sections-bg7{
+	background-color: #2D2D2D;
+}
+.footer-bg8{
+	background-color: #424242 !important;
+}
+.bg-strah{
+	background-color: #F6F8EF;
+}
+.container-1780{
+	max-width: 1780px;
+	margin: 0 auto;
+}
+.container-1460{
+	max-width: 1460px;
+}
+.container-1560{
+	max-width: 1560px !important;
+}
+.container-1600{
+	max-width: 1600px !important;
+}
+.container-1400{
+	max-width: 1400px;
+}
+.container-1340{
+	max-width: 1340px !important;
+	margin: 0 auto;
+}
+.container-1240{
+	max-width: 1240px !important;
+	margin: 0 auto;
+}
+
+.container-1176{
+	max-width: 1176px !important;
+	margin: 0 auto;
+}
+.container-1622 {
+	max-width: 1622px !important;
+    margin: 0 auto;
+}
+
+.bg-10{
+	background-color: #163838 !important;
+}
+.bg-body-10{
+	background-color: #F5F5F5 !important;
+}

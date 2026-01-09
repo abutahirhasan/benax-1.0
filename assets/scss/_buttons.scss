@@ -1,0 +1,351 @@
+.theme-btn-main {
+	display: inline-flex;
+	align-items: center;
+	gap: 0;
+	position: relative;
+	transition: all 0.4s ease;
+	text-transform: capitalize;
+
+	&.style-2 {
+		background-color: $theme-color;
+		padding: 7px 30px;
+		padding-right: 7px;
+
+		.theme-btn-arrow-left,
+		.theme-btn-arrow-right {
+			width: 43px;
+			height: 43px;
+			background: $white;
+			color: $theme-color;
+		}
+
+		.theme-btn {
+			background-color: transparent;
+			padding: 0;
+			margin-right: 17px;
+			font-weight: 600;
+		}
+
+		&:hover {
+			padding-right: 30px;
+			padding-left: 9px;
+
+			.theme-btn {
+				background-color: transparent;
+			}
+
+			.theme-btn-arrow-left {
+				left: 5px;
+			}
+		}
+	}
+
+	&:hover {
+		.theme-btn-arrow-left {
+			scale: 1;
+		}
+
+		.theme-btn-arrow-right {
+			scale: 0;
+		}
+
+		.theme-btn {
+			transform: translateX(56px);
+		}
+	}
+
+	.theme-btn-arrow-left,
+	.theme-btn-arrow-right {
+		width: 53px;
+		height: 53px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		background: $theme-color;
+		color: $white;
+		transition: 0.4s;
+		text-align: center;
+
+		@include breakpoint(max-sm) {
+			width: 48px;
+			height: 48px;
+		}
+	}
+
+	.theme-btn-arrow-left {
+		scale: 0;
+		position: absolute;
+		left: 3px;
+	}
+
+	.theme-btn {
+		background: $theme-color;
+		color: $white;
+		font-weight: 600;
+		font-size: 16px;
+		padding: 13px 30px;
+		display: inline-flex;
+		font-family: "Barlow", sans-serif;
+		align-items: center;
+		gap: 30px;
+		transition: 0.4s;
+
+		@include breakpoint(max-sm) {
+			font-size: 14px;
+			padding: 10px 25px;
+		}
+	}
+
+	&:hover {
+		.theme-btn {
+			background-color: $header-color;
+		}
+
+		.theme-btn-arrow-left,
+		.theme-btn-arrow-right {
+			background-color: $white;
+		}
+	}
+}
+
+.cmn__btn {
+	background-color: $theme-color;
+	color: $white;
+	font-size: 16px;
+	line-height: 17px;
+	font-weight: 500;
+	padding: 21px 34px;
+	border-radius: 6px;
+	transition: background-color 0.4s ease, transform 0.3s ease;
+
+	&:hover {
+		transform: translateY(-2px);
+		background: linear-gradient(90deg, #f36a3b 0%, #b52600 100%);
+	}
+
+	&:active {
+		transform: translateY(0);
+	}
+}
+
+.btn-theme-outline {
+	background-color: transparent;
+	color: $theme-color;
+	font-size: 16px;
+	line-height: 17px;
+	font-weight: 500;
+	padding: 17px 34px;
+	border: 1px solid $theme-color;
+	border-radius: 100px;
+	transition: background-color 0.4s ease, color 0.4s ease, transform 0.3s ease;
+
+	&:hover {
+		transform: translateY(-2px);
+		background-color: $theme-color;
+		color: $white;
+	}
+
+	&:active {
+		transform: translateY(0);
+	}
+}
+
+.cmn__btn {
+	&.style-whie {
+		background-color: $white;
+		color: $black;
+		transition: all 0.4s;
+		&:hover {
+			color: $white;
+		}
+	}
+	&.white-outline {
+		background-color: transparent;
+		border: 1px solid $white;
+		color: $white;
+		&:hover {
+			border-color: #ff5700;
+		}
+	}
+	&.style-black {
+		background-color: $black;
+		color: $white;
+		transition: all 0.4s;
+		&:hover {
+			color: $white;
+		}
+	}
+	&.black-outline {
+		background-color: transparent;
+		border: 1px solid $black;
+		color: $black;
+		&:hover {
+			border-color: $black;
+			background: $black !important;
+		}
+	}
+}
+
+.read-more {
+	font-weight: 600;
+	color: $white;
+	font-size: 16px;
+	transition: all 0.4s;
+	i {
+		transform: rotate(-50deg);
+		transition: all 0.4s;
+	}
+	&:hover {
+		color: $theme-color;
+		i {
+			transform: rotate(0);
+		}
+	}
+}
+
+.theme-btn-arrow {
+	display: flex;
+	align-items: center;
+	.texts {
+		font-size: 16px;
+		font-weight: 600;
+		color: $white;
+		background-color: $theme-color;
+		padding: 9.5px 24px;
+	}
+	.theme-btn-arrow {
+		width: 50px;
+		height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $white;
+		color: $theme-color;
+		i {
+			transform: rotate(-50deg);
+			transition: all 0.4s;
+		}
+	}
+	&:hover {
+		.theme-btn-arrow {
+			i {
+				transform: rotate(0deg);
+			}
+		}
+	}
+}
+
+.theme-outline__btn {
+	border: 1px solid $theme-color;
+	.theme-btn-arrow {
+		.texts {
+			color: $theme-color;
+			background-color: transparent;
+		}
+		.theme-btn-arrow {
+			background-color: $theme-color !important;
+			i {
+				transform: rotate(0deg) !important;
+				color: $white;
+			}
+		}
+	}
+	&.active,
+	&:hover {
+		border-color: $white;
+		background-color: $white;
+		transition: all 0.4s;
+		.theme-btn-arrow {
+			.theme-btn-arrow {
+				i {
+					transform: rotate(50deg) !important;
+				}
+			}
+		}
+	}
+	&.white-outline__btn {
+		border: 1px solid $white;
+		.theme-btn-arrow {
+			.texts {
+				color: $white;
+				background-color: transparent;
+			}
+			.theme-btn-arrow {
+				background-color: $white !important;
+				i {
+					transform: rotate(0deg) !important;
+					color: $black;
+				}
+			}
+		}
+		&.active,
+		&:hover {
+			border-color: $theme-color;
+			background-color: $theme-color;
+			transition: all 0.4s;
+			.theme-btn-arrow {
+				.theme-btn-arrow {
+					i {
+						transform: rotate(50deg) !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+.box-unique-btn {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 29px;
+	text-transform: uppercase;
+	text-decoration-line: underline;
+	color: #ffffff;
+	position: relative;
+	z-index: 1;
+	padding-left: 23px;
+	&::before {
+		position: absolute;
+		content: "";
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 42px;
+		height: 42px;
+		border-radius: 50%;
+		background-color: $theme-color;
+		z-index: -1;
+		transition: all 0.4s;
+	}
+	&:hover {
+		&::before {
+			width: 120%;
+			border-radius: 100px;
+		}
+	}
+}
+
+.style-black-hover{
+	border: 1px solid $black;
+	&:hover{
+		background: #fff !important;
+		color: $black !important;
+		&::before{
+			background: transparent !important;
+		}
+	}
+}
+
+.cmn__btn-10{
+	display: inline-flex;
+	align-items: center;
+	border-radius: 100px;
+	background-color: #2F4F4F;
+	 gap: 10px;
+	 i{
+		transform: rotate(-24deg);
+	 }
+	 &:hover{
+		background: #233f3f !important;
+	 }
+}
