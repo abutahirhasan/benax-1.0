@@ -1048,19 +1048,19 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 	$("#priceSwitcher").on("change", function () {
-		const isMonthly = $(this).is(":checked");
-
-		$(".amount").each(function () {
-			const monthlyPrice = $(this).data("monthly");
-			const yearlyPrice = $(this).data("yearly");
-
-			// Animate number change
-			$(this).text(isMonthly ? monthlyPrice : yearlyPrice);
-		});
-
-		$(".period").text(isMonthly ? "Monthly" : "Yearly");
+		if ($(this).is(":checked")) {
+			// show yearly
+			$(".pricing-monthly").addClass("d-none").removeClass("d-block");
+			$(".pricing-yearly").addClass("d-block").removeClass("d-none");
+		} else {
+			// show monthly
+			$(".pricing-yearly").addClass("d-none").removeClass("d-block");
+			$(".pricing-monthly").addClass("d-block").removeClass("d-none");
+		}
 	});
 });
+
+
   
   })(jQuery); // End jQuery
 

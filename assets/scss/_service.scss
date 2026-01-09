@@ -1316,10 +1316,14 @@
 		font-size: 66px;
 		line-height: 76px;
 		color: $white;
-		max-width: 1120px;
+		max-width: 1287px;
 		margin-bottom: 1px;
 		margin: 0 auto;
 		font-weight: 500;
+		span {
+			font-size: 66px;
+			line-height: 76px;
+		}
 	}
 	.work-unique-wrap {
 		display: flex;
@@ -1362,6 +1366,10 @@
 			max-width: 720px;
 			margin-bottom: 1px;
 			margin: 0 auto 30px;
+			span {
+				font-size: 44px;
+				line-height: 54px;
+			}
 		}
 		.work-unique-wrap {
 			display: flex;
@@ -1411,6 +1419,10 @@
 			max-width: 520px;
 			margin-bottom: 1px;
 			margin: 0 auto 30px;
+			span {
+				font-size: 32px;
+				line-height: 42px;
+			}
 		}
 		.work-unique-wrap {
 			display: flex;
@@ -1463,6 +1475,10 @@
 			max-width: 520px;
 			margin-bottom: 1px;
 			margin: 0 auto 30px;
+			span {
+				font-size: 32px;
+				line-height: 42px;
+			}
 		}
 		.work-unique-wrap {
 			display: flex;
@@ -1522,6 +1538,10 @@
 			max-width: 520px;
 			margin-bottom: 1px;
 			margin: 0 auto 30px;
+			span {
+				font-size: 24px;
+				line-height: 34px;
+			}
 		}
 		.work-unique-wrap {
 			display: flex;
@@ -2857,7 +2877,7 @@
 .service-wrapper-10 {
 	margin-top: -70px;
 
-	@include breakpoint (max-xxl) {
+	@include breakpoint(max-xxl) {
 		margin-top: 0;
 	}
 
@@ -2865,7 +2885,7 @@
 		justify-content: end;
 		margin-right: 250px;
 
-		@include breakpoint (max-xxl) {
+		@include breakpoint(max-xxl) {
 			margin-right: 0;
 			justify-content: center;
 		}
@@ -2879,7 +2899,7 @@
 		position: relative;
 		overflow: hidden;
 
-		@include breakpoint (max-xxl) {
+		@include breakpoint(max-xxl) {
 			margin-top: 30px;
 		}
 
@@ -2890,7 +2910,7 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #85A6A6; 
+			background-color: #85a6a6;
 			transition: top 0.4s ease;
 			z-index: -1;
 			border-radius: 12px;
@@ -2899,7 +2919,7 @@
 		&.style-2 {
 			margin-top: 30px;
 
-			@include breakpoint (max-xxl) {
+			@include breakpoint(max-xxl) {
 				margin-top: 30px;
 			}
 		}
@@ -2917,23 +2937,23 @@
 				margin-bottom: 35px;
 				font-family: $body-font;
 
-				@include breakpoint (max-xxl) {
+				@include breakpoint(max-xxl) {
 					margin-bottom: 20px;
 					margin-top: 20px;
 				}
 
 				a {
-					color: #150E3D;
+					color: #150e3d;
 
 					&:hover {
-						color: #85A6A6;
+						color: #85a6a6;
 					}
 				}
 			}
 
 			p {
 				line-height: 175%;
-				color: #4B5563;
+				color: #4b5563;
 				font-size: 16px;
 				font-weight: 400;
 				margin: 0 auto;
@@ -2946,17 +2966,17 @@
 				text-align: center;
 				margin-top: 44px;
 
-				@include breakpoint (max-xxl) {
+				@include breakpoint(max-xxl) {
 					margin-top: 30px;
 				}
 
 				.themes-btn {
-					border: 1px solid #85888E;
+					border: 1px solid #85888e;
 					background-color: transparent;
-					color: #85888E;
+					color: #85888e;
 
 					&:hover {
-						background-color: #2F4F4F;
+						background-color: #2f4f4f;
 						color: $white;
 					}
 				}
@@ -2994,7 +3014,7 @@
 
 				.service-button {
 					.themes-btn {
-						background-color: #2F4F4F;
+						background-color: #2f4f4f;
 						color: $white;
 					}
 				}
@@ -3007,11 +3027,11 @@
 	position: relative;
 	z-index: 9;
 
-	@include breakpoint (max-xxl) {
+	@include breakpoint(max-xxl) {
 		margin-top: -100px;
 	}
 
-	@include breakpoint (max-lg) {
+	@include breakpoint(max-lg) {
 		margin-top: -80px;
 	}
 
@@ -3021,7 +3041,7 @@
 		left: 0;
 		z-index: -1;
 
-		@include breakpoint (max-xxl) {
+		@include breakpoint(max-xxl) {
 			display: none;
 		}
 
@@ -3036,7 +3056,7 @@
 		top: 20%;
 		z-index: -1;
 
-		@include breakpoint (max-xxl) {
+		@include breakpoint(max-xxl) {
 			display: none;
 		}
 	}

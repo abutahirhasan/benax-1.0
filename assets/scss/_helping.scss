@@ -543,3 +543,11 @@
 .team-bg {
 	background-color: #E6E6E6;
 }
+
+.text-xxl-start-cus{
+	@include breakpoint(xxl){
+		left: 90px;
+		position: relative;
+		display: block;
+	}
+}

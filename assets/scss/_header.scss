@@ -191,6 +191,7 @@
 									text-align: center;
 									opacity: 0;
 									visibility: hidden;
+									pointer-events: none;
 									@include transition;
 									margin-top: 20px;
 									left: 25px;
@@ -255,6 +256,8 @@
 										opacity: 1;
 										visibility: visible;
 										margin-top: 0;
+										z-index: 0;
+										pointer-events: initial;
 										.cmn__btn {
 											&:hover {
 												color: $white !important;
@@ -496,9 +499,9 @@
 							}
 						}
 						> .submenu {
-							// visibility: visible;
-							// opacity: 1;
-							// transform: translateY(0px);
+							visibility: visible;
+							opacity: 1;
+							transform: translateY(0px);
 						}
 					}
 				}
