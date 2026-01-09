@@ -18589,8 +18589,8 @@ span {
 }
 .section-title10 h2 {
   font-weight: 400;
-  font-size: 52px;
-  line-height: 62px;
+  font-size: 42px;
+  line-height: 52px;
   text-align: center;
   letter-spacing: -0.02em;
   text-transform: capitalize;
@@ -21504,13 +21504,15 @@ span {
   }
 }
 .service-wrapper-10 .service-card-items-10 .content .service-button .themes-btn {
-  border: 1px solid #85888e;
-  background-color: transparent;
-  color: #85888e;
+  padding: 15px 29px;
+  border-radius: 100px;
+  border: 1px solid #85888e !important;
+  background-color: transparent !important;
+  color: #85888e !important;
 }
 .service-wrapper-10 .service-card-items-10 .content .service-button .themes-btn:hover {
-  background-color: #2f4f4f;
-  color: var(--white);
+  background-color: #2f4f4f !important;
+  color: var(--white) !important;
 }
 .service-wrapper-10 .service-card-items-10:hover::before {
   top: 0;
@@ -21526,6 +21528,10 @@ span {
 .service-wrapper-10 .service-card-items-10:hover .content {
   position: relative;
   z-index: 999;
+}
+.service-wrapper-10 .service-card-items-10:hover .content .service-button .themes-btn {
+  background-color: #2f4f4f !important;
+  color: var(--white) !important;
 }
 .service-wrapper-10 .service-card-items-10:hover .content h3 a {
   color: var(--white);
@@ -27605,4 +27611,4 @@ span {
 
 .section-bg11 {
   background-color: #efefef !important;
-}
+}/*# sourceMappingURL=main.css.map */

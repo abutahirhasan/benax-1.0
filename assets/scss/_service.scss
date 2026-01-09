@@ -2971,13 +2971,15 @@
 				}
 
 				.themes-btn {
-					border: 1px solid #85888e;
-					background-color: transparent;
-					color: #85888e;
+					padding: 15px 29px;
+					border-radius: 100px;
+					border: 1px solid #85888e !important;
+					background-color: transparent !important;
+					color: #85888e !important;
 
 					&:hover {
-						background-color: #2f4f4f;
-						color: $white;
+						background-color: #2f4f4f !important;
+						color: $white !important;
 					}
 				}
 			}
@@ -3001,6 +3003,13 @@
 			.content {
 				position: relative;
 				z-index: 999;
+
+				.service-button {
+					.themes-btn {
+						background-color: #2f4f4f !important;
+						color: $white !important;
+					}
+				}
 
 				h3 {
 					a {
