@@ -9069,6 +9069,7 @@ span {
   color: #8b8b8b;
   background-color: transparent;
 }
+
 .header-4 {
   position: absolute;
   top: 0;
@@ -13342,7 +13343,7 @@ span {
 }
 .hero-7 .hero-title {
   font-weight: 700;
-  font-size: 400px;
+  font-size: 370px;
   line-height: 200px;
   text-align: center;
   color: #ff7425;
@@ -24918,11 +24919,15 @@ span {
 .working-wrapper-select .working-thumb-top {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 .working-wrapper-select .working-thumb-bottom {
   max-width: 1640px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 .working-wrapper-select .style1 {
   max-width: 519px;
@@ -27600,4 +27605,4 @@ span {
 
 .section-bg11 {
   background-color: #efefef !important;
-}/*# sourceMappingURL=main.css.map */
+}
