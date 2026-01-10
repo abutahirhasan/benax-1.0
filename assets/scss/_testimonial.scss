@@ -83,6 +83,7 @@
 	display: flex;
 	gap: 58px;
 	align-items: flex-start;
+	.rd-title,
 	h4 {
 		font-size: 36px;
 		line-height: 46px;
@@ -425,6 +426,7 @@
 				display: flex;
 				align-items: center;
 				gap: 13px;
+				h3,
 				h4 {
 					font-size: 18px;
 				}

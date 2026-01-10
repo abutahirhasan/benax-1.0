@@ -402,6 +402,7 @@
 		left: 0;
 		transition: all 0.6s;
 		z-index: 1;
+		.date-title,
 		h6 {
 			font-weight: 500;
 			font-size: 18px;
@@ -438,6 +439,7 @@
 			padding: 21px 31px;
 			width: 100%;
 			bottom: -200px;
+			.date-title,
 			h6 {
 				font-size: 18px;
 				line-height: 20px;
@@ -464,6 +466,7 @@
 			padding: 18px 24px;
 			width: 100%;
 			bottom: -200px;
+			.date-title,
 			h6 {
 				font-size: 16px;
 				line-height: 22px;
@@ -490,6 +493,7 @@
 			padding: 18px 24px;
 			width: 100%;
 			bottom: -200px;
+			.date-title,
 			h6 {
 				font-size: 16px;
 				line-height: 22px;
@@ -769,6 +773,7 @@
 			}
 			.title {
 				font-size: 22px;
+				font-weight: 600;
 				color: $black;
 			}
 		}
@@ -904,7 +909,7 @@
 				color: $black;
 				font-weight: 700;
 			}
-			h3 {
+			h4 {
 				color: #919191;
 			}
 			a {
@@ -2027,6 +2032,7 @@
 			text-transform: uppercase;
 			color: #171717;
 		}
+		h3,
 		h5 {
 			font-weight: 600;
 			font-size: 36px;
@@ -2038,6 +2044,7 @@
 				font-size: 90px;
 				line-height: 90px;
 			}
+			h3,
 			h5 {
 				font-size: 24px;
 				line-height: 32px;
@@ -2048,6 +2055,7 @@
 				font-size: 50px;
 				line-height: 50px;
 			}
+			h3,
 			h5 {
 				font-size: 20px;
 				line-height: 26px;
