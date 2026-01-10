@@ -2415,7 +2415,7 @@ span {
     font-size: 16px;
   }
 }
-.about-wrapper-10 .about-content-10 .about-right-item .right-content h6 {
+.about-wrapper-10 .about-content-10 .about-right-item .right-content h3 {
   font-size: 20px;
   font-weight: 500;
   font-family: "Satoshi", sans-serif;
@@ -2423,7 +2423,7 @@ span {
   line-height: 150%;
 }
 @media (max-width: 1399px) {
-  .about-wrapper-10 .about-content-10 .about-right-item .right-content h6 {
+  .about-wrapper-10 .about-content-10 .about-right-item .right-content h3 {
     font-size: 16px;
   }
 }
@@ -2593,7 +2593,7 @@ span {
 .service-banner-section .service-box .content {
   padding: 30px;
 }
-.service-banner-section .service-box h5 {
+.service-banner-section .service-box h3 {
   margin-bottom: 8px;
   color: #043030;
   font-weight: 700;
@@ -6913,18 +6913,18 @@ span {
   display: flex;
   gap: 27px;
 }
-.feature-wrapper-10 .feature-card-items-10 .top-item .content h3 {
+.feature-wrapper-10 .feature-card-items-10 .top-item .content h2 {
   font-size: 26px;
   font-weight: 500;
   font-family: "DM Sans", sans-serif;
 }
 @media (max-width: 1399px) {
-  .feature-wrapper-10 .feature-card-items-10 .top-item .content h3 {
+  .feature-wrapper-10 .feature-card-items-10 .top-item .content h2 {
     font-size: 22px;
   }
 }
 @media (max-width: 575px) {
-  .feature-wrapper-10 .feature-card-items-10 .top-item .content h3 {
+  .feature-wrapper-10 .feature-card-items-10 .top-item .content h2 {
     font-size: 20px;
   }
 }
@@ -6961,7 +6961,7 @@ span {
     margin-top: 30px;
   }
 }
-.feature-wrapper-10 .feature-card-items-10 .feature-number h6 {
+.feature-wrapper-10 .feature-card-items-10 .feature-number h3 {
   font-size: 16px;
   font-weight: 700;
   font-family: "DM Sans", sans-serif;
@@ -6988,7 +6988,7 @@ span {
     display: none;
   }
 }
-.feature-wrapper-10 .feature-card-items-10 .feature-number h6 {
+.feature-wrapper-10 .feature-card-items-10 .feature-number h3 {
   font-size: 16px;
   font-weight: 500;
 }
@@ -14943,7 +14943,7 @@ span {
   align-items: center;
   gap: 10px;
 }
-.hero-10 .hero-content .group-item .image-item .cont h5 {
+.hero-10 .hero-content .group-item .image-item .cont h2 {
   font-size: 20px;
   font-weight: 700;
   font-family: "Satoshi", sans-serif;
@@ -23527,13 +23527,13 @@ span {
   margin-top: 30px;
   text-align: center;
 }
-.team-card-items-10 .team-content h4 {
+.team-card-items-10 .team-content h3 {
   font-size: 22px;
   font-weight: 700;
   font-family: "Satoshi", sans-serif;
   margin-bottom: 8px;
 }
-.team-card-items-10 .team-content h4 a {
+.team-card-items-10 .team-content h3 a {
   color: var(--bg-dark3);
 }
 .team-card-items-10 .team-content span {
@@ -27466,13 +27466,13 @@ span {
 .testimonial-card-items-10 .star {
   color: #85a6a6;
 }
-.testimonial-card-items-10 h4 {
+.testimonial-card-items-10 h3 {
   font-size: 22px;
   font-weight: 700;
   margin-top: 10px;
 }
 @media (max-width: 1399px) {
-  .testimonial-card-items-10 h4 {
+  .testimonial-card-items-10 h3 {
     font-size: 20px;
   }
 }
