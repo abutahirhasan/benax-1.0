@@ -1135,6 +1135,7 @@
 		}
 		.cont {
 			margin-top: 160px;
+			.c-title,
 			h5 {
 				a {
 					font-size: 24px;
@@ -1163,6 +1164,7 @@
 				-webkit-text-stroke-color: $theme-color;
 			}
 			.cont {
+				.c-title,
 				h5 {
 					a {
 						color: $theme-color;
@@ -1197,6 +1199,7 @@
 			}
 			.cont {
 				margin-top: 120px;
+				.c-title,
 				h5 {
 					a {
 						font-size: 20px;
@@ -1224,6 +1227,7 @@
 			}
 			.cont {
 				margin-top: 120px;
+				.c-title,
 				h5 {
 					a {
 						font-size: 20px;
@@ -2075,6 +2079,7 @@
 		bottom: 0;
 		padding: 0 10px 120px 280px;
 		z-index: 2;
+		.c-sub-title,
 		h5 {
 			font-weight: 800;
 			font-size: 15px;
@@ -2082,7 +2087,7 @@
 			letter-spacing: 0.06em;
 			color: #ffffff;
 			font-family: $body-font;
-			margin-bottom: 20px;
+			margin-bottom: 28px;
 		}
 		h2 {
 			a {
@@ -2099,10 +2104,11 @@
 		.content {
 			max-width: 1340px;
 			padding: 24px 24px 80px 30px;
+			.c-sub-title,
 			h5 {
 				font-size: 15px;
 				line-height: 20px;
-				margin-bottom: 20px;
+				margin-bottom: 28px;
 			}
 			h2 {
 				a {
@@ -2116,10 +2122,11 @@
 		.content {
 			max-width: 1340px;
 			padding: 24px 24px 80px 30px;
+			.c-sub-title,
 			h5 {
 				font-size: 15px;
 				line-height: 20px;
-				margin-bottom: 16px;
+				margin-bottom: 25px;
 			}
 			h2 {
 				a {
@@ -2133,10 +2140,11 @@
 		.content {
 			max-width: 1340px;
 			padding: 60px 24px 60px 30px;
+			.c-sub-title,
 			h5 {
 				font-size: 12px;
 				line-height: 18px;
-				margin-bottom: 5px;
+				margin-bottom: 20px;
 			}
 			h2 {
 				a {
@@ -2165,10 +2173,11 @@
 		.content {
 			max-width: 1340px;
 			padding: 60px 24px 60px 30px;
+			.c-sub-title,
 			h5 {
 				font-size: 12px;
 				line-height: 18px;
-				margin-bottom: 5px;
+				margin-bottom: 15px;
 			}
 			h2 {
 				a {
@@ -2243,6 +2252,7 @@
 	.project-icon {
 		margin-bottom: 52px;
 	}
+	.title-p,
 	h4 {
 		margin-bottom: 12px;
 		a {
@@ -2520,7 +2530,7 @@
 		}
 	}
 	.cont {
-		h5 {
+		h3 {
 			font-weight: 600;
 			font-size: 20px;
 			line-height: 30px;
@@ -2553,7 +2563,7 @@
 			}
 		}
 		.cont {
-			h5 {
+			h3 {
 				font-size: 18px;
 				line-height: 28px;
 				margin-bottom: 10px;
@@ -2575,7 +2585,7 @@
 			}
 		}
 		.cont {
-			h5 {
+			h3 {
 				font-size: 18px;
 				line-height: 28px;
 				margin-bottom: 10px;
@@ -2584,6 +2594,14 @@
 				font-size: 16px;
 				line-height: 24px;
 			}
+		}
+	}
+}
+
+.development--item{
+	.content{
+		a{
+
 		}
 	}
 }

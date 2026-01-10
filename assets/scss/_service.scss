@@ -1993,6 +1993,7 @@
 				display: flex;
 				align-items: center;
 				gap: 20px;
+				.serial,
 				h5 {
 					font-size: 66px;
 					line-height: 76px;
@@ -2024,6 +2025,7 @@
 			}
 			.content-right {
 				.text-area {
+					.serial,
 					h5 {
 						color: $theme-color;
 						-webkit-text-stroke: 2px $theme-color;
@@ -2052,6 +2054,7 @@
 				max-width: 800px;
 				.text-area {
 					gap: 12px;
+					.serial,
 					h5 {
 						font-size: 44px;
 						line-height: 54px;
@@ -2079,6 +2082,7 @@
 				max-width: 700px;
 				.text-area {
 					gap: 12px;
+					.serial,
 					h5 {
 						font-size: 44px;
 						line-height: 54px;
@@ -2104,6 +2108,7 @@
 				max-width: 100%;
 				.text-area {
 					gap: 12px;
+					.serial,
 					h5 {
 						font-size: 44px;
 						line-height: 54px;
@@ -2126,6 +2131,7 @@
 				max-width: 100%;
 				.text-area {
 					gap: 8px;
+					.serial,
 					h5 {
 						font-size: 30px;
 						line-height: 40px;
@@ -2149,6 +2155,7 @@
 				.text-area {
 					flex-wrap: wrap;
 					gap: 8px;
+					.serial,
 					h5 {
 						font-size: 24px;
 						line-height: 34px;
@@ -2180,6 +2187,7 @@
 		margin-bottom: 50px;
 	}
 	h4,
+	h3,
 	p,
 	h2 {
 		font-family: "Space Grotesk", sans-serif;
@@ -2639,6 +2647,7 @@
 	padding: 45px 40px;
 	position: relative;
 	z-index: 1;
+	.i-title,
 	h4 {
 		margin-bottom: 22px;
 		a {
@@ -2690,6 +2699,7 @@
 	@include breakpoint(max-xl) {
 		padding: 30px 22px;
 		z-index: 1;
+		.i-title,
 		h4 {
 			margin-bottom: 12px;
 			a {
@@ -2724,6 +2734,7 @@
 }
 .service-count-items {
 	padding: 60px 10px;
+	.title-count,
 	h3 {
 		span {
 			font-weight: 700;
@@ -2743,6 +2754,7 @@
 	}
 	@include breakpoint(max-xl) {
 		padding: 32px 10px;
+		.title-count,
 		h3 {
 			span {
 				font-size: 34px;

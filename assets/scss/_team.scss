@@ -928,6 +928,7 @@
 				}
 			}
 		}
+		.title-name,
 		h5 {
 			margin-bottom: 10px;
 			a {
@@ -944,6 +945,7 @@
 	}
 	&:hover {
 		.cont {
+			.title-name,
 			h5 {
 				a {
 					color: $theme-color;
@@ -957,6 +959,7 @@
 			max-width: 150px;
 		}
 		.cont {
+			.title-name,
 			h5 {
 				margin-bottom: 2px;
 				a {
@@ -991,6 +994,7 @@
 			bottom: 0;
 			z-index: 1;
 		}
+		.title-ex,
 		h4 {
 			font-style: 36px;
 			line-height: 38px;
