@@ -27962,4 +27962,9 @@ span {
 
 .section-bg11 {
   background-color: #efefef !important;
+}
+
+.review-ratting i {
+  color: var(--theme-star);
+  font-size: 18px;
 }/*# sourceMappingURL=main.css.map */
