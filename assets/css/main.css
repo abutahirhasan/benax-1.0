@@ -14726,8 +14726,8 @@ span {
     padding-top: 20px;
   }
   .hero-section-09 .main-title span {
-    font-size: 59px;
-    line-height: 120px;
+    font-size: 39px;
+    line-height: 80px;
   }
   .hero-section-09 .main-title .title {
     font-weight: 800;
@@ -24218,13 +24218,13 @@ span {
     position: relative;
   }
   .since-section .service-title {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 24px;
+    line-height: 34px;
     text-align: center !important;
     margin: 0 auto 30px !important;
   }
   .since-section .service-title span {
-    font-size: 32px;
+    font-size: 24px;
   }
   .since-section .service-title .sticker-thing {
     right: 350px !important;
@@ -26668,11 +26668,13 @@ span {
   .testimonial-content-style-1 {
     gap: 20px;
   }
+  .testimonial-content-style-1 .rd-title,
   .testimonial-content-style-1 h4 {
     font-size: 28px;
     line-height: 36px;
     margin-bottom: 20px;
   }
+  .testimonial-content-style-1 .rd-title span,
   .testimonial-content-style-1 h4 span {
     font-size: 28px;
   }
@@ -26693,11 +26695,13 @@ span {
     width: 40px;
     height: 40px;
   }
+  .testimonial-content-style-1 .rd-title,
   .testimonial-content-style-1 h4 {
     font-size: 22px;
     line-height: 30px;
     margin-bottom: 16px;
   }
+  .testimonial-content-style-1 .rd-title span,
   .testimonial-content-style-1 h4 span {
     font-size: 22px;
   }
