@@ -705,8 +705,8 @@
 					font-size: 180px;
 					line-height: 170px;
 					color: #171717;
-					span{
-						@include breakpoint(xxl){
+					span {
+						@include breakpoint(xxl) {
 							letter-spacing: -22px;
 						}
 					}
@@ -729,8 +729,8 @@
 					color: #171717;
 					text-align: right;
 					letter-spacing: -2px;
-					span{
-						@include breakpoint(xxl){
+					span {
+						@include breakpoint(xxl) {
 							letter-spacing: -22px;
 						}
 					}
@@ -4238,6 +4238,29 @@
 	.container-fluid {
 		padding: 0 150px;
 	}
+	.hero-image {
+		margin-top: 120px;
+		.ele-left {
+			max-width: 300px;
+			position: absolute;
+			left: -60px;
+			bottom: 460px;
+			height: 163px;
+			object-fit: contain;
+			z-index: 1;
+			animation: updown 3s linear infinite;
+		}
+		.ele-right {
+			max-width: 200px;
+			position: absolute;
+			right: -60px;
+			bottom: 104px;
+			height: 180px;
+			object-fit: contain;
+			z-index: 1;
+			animation: updown 3s linear infinite;
+		}
+	}
 
 	.hero-list {
 		@include flex;
@@ -4301,6 +4324,242 @@
 			@include imgw;
 		}
 	}
+	@include breakpoint(max-xxl) {
+		.hero-image {
+			margin-top: 120px;
+			.ele-left {
+				max-width: 200px;
+				position: absolute;
+				left: -60px;
+				bottom: 200px;
+				height: 100px;
+				object-fit: contain;
+			}
+			.ele-right {
+				max-width: 150px;
+				position: absolute;
+				right: 5px;
+				bottom: 5px;
+				height: 90px;
+			}
+		}
+
+		.hero-list {
+			@include flex;
+			gap: 65px;
+			position: absolute;
+			right: 150px;
+			z-index: 999;
+			bottom: 30px;
+			padding-top: 30px;
+
+			span {
+				color: $white;
+				font-size: 18px;
+				font-weight: 500;
+			}
+		}
+
+		.hero-content {
+			padding-bottom: 50px;
+
+			h1 {
+				color: $white;
+				font-size: 48px;
+				font-weight: 400;
+				line-height: 120%;
+
+				span {
+					font-weight: 500;
+				}
+			}
+
+			.group-item {
+				@include flex;
+				gap: 25px;
+				margin-top: 50px;
+
+				.image-item {
+					@include flex;
+					gap: 10px;
+
+					.cont {
+						h2 {
+							font-size: 20px;
+							font-weight: 700;
+							font-family: "Satoshi", sans-serif;
+							color: $white;
+						}
+
+						span {
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		padding-top: 120px;
+		.hero-image {
+			margin-top: 0px;
+			.ele-left {
+				max-width: 120px;
+				position: absolute;
+				left: -60px;
+				bottom: initial;
+				top: 0;
+				height: 80px;
+				object-fit: contain;
+			}
+			.ele-right {
+				max-width: 120px;
+				position: absolute;
+				right: 0px;
+				bottom: 5px;
+				height: 70px;
+			}
+		}
+
+		.hero-list {
+			@include flex;
+			gap: 65px;
+			position: absolute;
+			right: 150px;
+			z-index: 999;
+			bottom: 30px;
+			padding-top: 30px;
+
+			span {
+				color: $white;
+				font-size: 18px;
+				font-weight: 500;
+			}
+		}
+
+		.hero-content {
+			padding-bottom: 50px;
+
+			h1 {
+				color: $white;
+				font-size: 36px;
+				font-weight: 400;
+				line-height: 120%;
+
+				span {
+					font-size: 36px;
+					font-weight: 500;
+				}
+			}
+
+			.group-item {
+				@include flex;
+				gap: 12px 25px;
+				flex-wrap: wrap;
+				margin-top: 30px;
+
+				.image-item {
+					@include flex;
+					gap: 10px;
+
+					.cont {
+						h2 {
+							font-size: 20px;
+							font-weight: 700;
+							font-family: "Satoshi", sans-serif;
+							color: $white;
+						}
+
+						span {
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		padding-top: 120px;
+		.container-fluid {
+			padding: 0 12px;
+		}
+		.hero-image {
+			margin-top: 0px;
+			.ele-left {
+				max-width: 120px;
+				position: absolute;
+				left: 10px;
+				bottom: initial;
+				top: 0;
+				height: 80px;
+				object-fit: contain;
+			}
+			.ele-right {
+				max-width: 120px;
+				position: absolute;
+				right: 0px;
+				bottom: 5px;
+				height: 70px;
+			}
+		}
+
+		.hero-list {
+			@include flex;
+			gap: 9px 16px;
+			position: absolute;
+			right: initial;
+			left: 10px;
+			flex-wrap: wrap;
+			z-index: 999;
+			bottom: 30px;
+			padding-top: 30px;
+
+			span {
+				color: $white;
+				font-size: 18px;
+				font-weight: 500;
+			}
+		}
+
+		.hero-content {
+			padding-bottom: 50px;
+
+			h1 {
+				color: $white;
+				font-size: 36px;
+				font-weight: 400;
+				line-height: 120%;
+
+				span {
+					font-size: 36px;
+					font-weight: 500;
+				}
+			}
+
+			.group-item {
+				@include flex;
+				gap: 12px 25px;
+				flex-wrap: wrap;
+				margin-top: 30px;
+
+				.image-item {
+					@include flex;
+					gap: 10px;
+
+					.cont {
+						h2 {
+							font-size: 15px;
+							font-weight: 700;
+							font-family: "Satoshi", sans-serif;
+							color: $white;
+						}
+
+						span {
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+	}
 }
-
-

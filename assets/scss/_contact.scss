@@ -736,3 +736,11 @@
 		z-index: -1;
 	}
 }
+
+.comming--soon{
+	.homemenu-thumb{
+		img{
+			filter: blur(10px);
+		}
+	}
+}

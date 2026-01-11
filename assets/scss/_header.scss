@@ -1011,6 +1011,9 @@
 			}
 		}
 	}
+	@include breakpoint(max-xl){
+		top: 0px;
+	}
 }
 
 //header style 11
