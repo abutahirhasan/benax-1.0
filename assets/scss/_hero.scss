@@ -1161,6 +1161,13 @@
 		position: relative;
 		z-index: 1;
 		top: -70px;
+		line-height: 0.95;         /* tight like image 1 */
+    letter-spacing: -0.02em;   /* key difference */
+    
+    /* font rendering fix */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: geometricPrecision;
 	}
 	.hero-content-footer {
 		display: flex;
